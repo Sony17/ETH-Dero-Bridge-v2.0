@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/sonyyadav/Dev/ETH-Dero-Bridge-v2.0/contracts/EthBridge.sol": {
-      "lastModificationDate": 1660318210369,
-      "contentHash": "4af562fa2669a6aaaad52a07c93fa018",
+      "lastModificationDate": 1661184994604,
+      "contentHash": "6aaaa57d380e6177614e3761c5d0441d",
       "sourceName": "contracts/EthBridge.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -31,10 +31,11 @@
       "imports": [
         "@openzeppelin/contracts/access/Ownable.sol",
         "@openzeppelin/contracts/utils/Counters.sol",
-        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "hardhat/console.sol"
       ],
       "versionPragmas": [
-        "^0.8.4"
+        "^0.8.9"
       ],
       "artifacts": [
         "EthBridge"
@@ -259,8 +260,8 @@
       ]
     },
     "/Users/sonyyadav/Dev/ETH-Dero-Bridge-v2.0/contracts/FakeDTTToken.sol": {
-      "lastModificationDate": 1660318210369,
-      "contentHash": "236d6ffd12c3278f956022d05a5b25d7",
+      "lastModificationDate": 1661185019967,
+      "contentHash": "d05fb9a9d9aa6ba35bd056a41c5f1f49",
       "sourceName": "contracts/FakeDTTToken.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -290,10 +291,45 @@
         "@openzeppelin/contracts/access/Ownable.sol"
       ],
       "versionPragmas": [
-        "^0.8.4"
+        "^0.8.9"
       ],
       "artifacts": [
         "FakeDTTToken"
+      ]
+    },
+    "/Users/sonyyadav/Dev/ETH-Dero-Bridge-v2.0/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1660509320219,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
       ]
     }
   }

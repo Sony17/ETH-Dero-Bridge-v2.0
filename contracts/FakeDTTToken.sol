@@ -1,9 +1,10 @@
 //SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+
 
 contract FakeDTTToken is ERC20, Ownable {
 
@@ -18,5 +19,9 @@ contract FakeDTTToken is ERC20, Ownable {
         require(_amount > 0, "Amount should be more than zero");
 
         _mint(_to, _amount);
+    }
+
+    function decimals() public view virtual override returns (uint8){
+        return 0;
     }
 }
